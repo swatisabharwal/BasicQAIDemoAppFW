@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.qait.demo.tests.Tatoc01_Basic"/>
-      <class name="com.qait.demo.tests.Tatoc02_Advanced"/>
+     <!--  <class name="com.qait.demo.tests.Tatoc02_Advanced"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
