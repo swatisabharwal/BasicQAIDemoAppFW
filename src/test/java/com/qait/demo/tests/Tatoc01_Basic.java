@@ -9,6 +9,7 @@ import static org.testng.Assert.assertNotNull;
 import java.sql.SQLException;
 import java.util.concurrent.TimeUnit;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -38,12 +39,13 @@ public class Tatoc01_Basic  {
 	
 	@Test
 	public void Tatoc02ClickGreenBox() {
-		test.tatocbasic.select_GreenBox();
+		Assert.assertTrue(test.tatocbasic.select_GreenBox(),"Assertion FAILED:User could not proceed post clicking the green Box");
 	}
 	
 	@Test
 	public void Tatoc03SelectSameColor() {		
-		test.tatocbasic.select_SameColor();
+		Assert.assertTrue(test.tatocbasic.select_SameColor(),"Assertion FAILED:User could not proceed post Painiting the second box same as the first one");
+		
 	}
 	
 	@Test
