@@ -47,7 +47,7 @@ public class Tatoc_BasicsAction extends GetPage {
 	public void launch_PopUp() {
 		element("launch_popup").click();
 		switchToNewWindow();
-		element("text_window").sendKeys("sujata");
+		element("text_window").sendKeys("TestName");
 		assertNotNull(element("text_window").getText());
 	}
 	

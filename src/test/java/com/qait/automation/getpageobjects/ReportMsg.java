@@ -7,10 +7,6 @@ package com.qait.automation.getpageobjects;
 
 import org.testng.Reporter;
 
-/**
- *
- * @author Prashant Shukla <prashantshukla@qainfotech.com>
- */
 public class ReportMsg {
 
     protected static final String fail = "[ASSERT FAIL]: ";

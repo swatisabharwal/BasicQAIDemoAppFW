@@ -28,14 +28,9 @@ public class Tatoc01_Basic  {
 	@BeforeClass
 	public void initializeVariable(){
 		test = new TestSessionInitiator(this.getClass().getName());
-		_initVars();
-	}
-	
-	//@BeforeClass
-	private void _initVars() {
 		tatoc_url = YamlReader.getYamlValue("baseUrl");
 	}
-
+	
 	@Test
 	public void Tatoc01OpenUrl() {
 		test.openUrl(tatoc_url);

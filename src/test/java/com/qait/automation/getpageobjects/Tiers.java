@@ -4,10 +4,7 @@
  */
 package com.qait.automation.getpageobjects;
 
-/**
- *
- * @author prashantshukla
- */
+
 public enum Tiers {
     PROD, prod, production, PRODUCTION, Production,
     Staging, STG, stg, STAGE ,Tatoc;

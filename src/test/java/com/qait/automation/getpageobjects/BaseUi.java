@@ -74,11 +74,6 @@ public class BaseUi {
 		((JavascriptExecutor) driver).executeScript(script);
 	}
 
-//	protected void selectValueTextFromDropDown(WebElement el, String value) {
-//		wait.waitForElementToBeVisible(el);
-//		Select sel = new Select(el);
-//		sel.selectByVisibleText(value);
-//	}
 
 	public void logMessage(String msgType, String message) {
 		ReportMsg.log(msgType, message);
