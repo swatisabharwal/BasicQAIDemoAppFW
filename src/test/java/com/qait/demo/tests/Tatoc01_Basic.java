@@ -2,24 +2,13 @@ package com.qait.demo.tests;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import static org.testng.Assert.assertNotNull;
-
-import java.sql.SQLException;
-import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import com.mysql.jdbc.Driver;
 import com.qait.automation.TestSessionInitiator;
-import com.qait.automation.getpageobjects.BaseUi;
+
 import com.qait.automation.utils.YamlReader;
+
 
 public class Tatoc01_Basic  {
 
@@ -33,47 +22,46 @@ public class Tatoc01_Basic  {
 	}
 	
 	@Test
-	public void Tatoc01OpenUrl() {
-		test.openUrl(tatoc_url);
+	public void Test_01_Validate_User_Can_Launch_Application() {
+		test.openUrl(tatoc_url);	
 	}
 	
 	@Test
-	public void Tatoc02ClickGreenBox() {
+	public void Test_02_Validate_User_Is_Able_To_Proceed_On_Clicking_GreenBox() {
 		Assert.assertTrue(test.tatocbasic.select_GreenBox(),"Assertion FAILED:User could not proceed post clicking the green Box");
 	}
 	
 	@Test
-	public void Tatoc03SelectSameColor() {		
+	public void Test_03_Validate_User_Is_Able_To_Proceed_On_Matching_Color_Of_Both_Boxes() {		
 		Assert.assertTrue(test.tatocbasic.select_SameColor(),"Assertion FAILED:User could not proceed post Painiting the second box same as the first one");
 		
 	}
 	
 	@Test
-	public void Tatoc04DragDropBox() {
-		test.tatocbasic.drag_DropElement();
+	public void Test_04_Validate_User_Is_Able_To_Drag_First_Box_To_Second_One() {
+		Assert.assertTrue(test.tatocbasic.drag_DropElement(),"Assertion FAILED:User could not proceed post successfully dragging box to be outer box frame");
 	}
 	
 	@Test
-	public void Tatoc05LaunchPopup() {
+	public void Test_05_Validate_User_Is_Able_To_Launch_The_Popup() {
 		test.tatocbasic.launch_PopUp();
 		
 	}
 	
 	@Test
-	public void Tatoc06EnterName() {
+	public void Test_06_User_Enters_And_Submit_Text() {
 		test.tatocbasic.submit_Name();
 	}
 	
 	@Test
-	public void Tatoc07GeneratToken() {
+	public void Test_07_User_Is_Able_To_Generate_Token() {
 		test.tatocbasic.generate_Token();
 	}
 	
 	@Test
-	public void Tatoc08Finish() {
+	public void Test_08_Closing_The_Activity() {
 		test.tatocbasic.finish();
 	}
-	
 	
 	@AfterClass	  
 	public void closeBrowser() {

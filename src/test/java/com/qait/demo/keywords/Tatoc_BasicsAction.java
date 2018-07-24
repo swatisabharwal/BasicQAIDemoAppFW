@@ -37,9 +37,11 @@ public class Tatoc_BasicsAction extends GetPage {
 		//Assert.assertEquals(box1Color, box2Color);
 	}
 
-	public void drag_DropElement() {
+	public boolean drag_DropElement() {
 		draganddrop(element("drag_box"), element("drop_box"));
 		element("drag_proceed").click();
+		flag = element("launch_popup").isDisplayed();
+		return flag;
 	}
 
 	public void launch_PopUp() {
@@ -65,7 +67,7 @@ public class Tatoc_BasicsAction extends GetPage {
 
 	public void finish() {
 		element("launch_proceed").click();
-		wait.hardWait(5);
+		wait.hardWait(2);
 		Assert.assertEquals(element("finish_msg").getText(), "End");
 	}
 

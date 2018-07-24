@@ -1,1 +1,1 @@
-Basic framework at work. For an inhouse Application
+Basic framework at work. For an in house Application

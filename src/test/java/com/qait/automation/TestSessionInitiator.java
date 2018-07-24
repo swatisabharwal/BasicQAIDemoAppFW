@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
 
+import com.jayway.restassured.RestAssured;
 import com.qait.automation.utils.TakeScreenshot;
 import com.qait.demo.keywords.CustomerSetupAction;
 import com.qait.demo.keywords.Login;
@@ -107,6 +108,8 @@ public class TestSessionInitiator {
 
 	public void openUrl(String url) {
 		driver.get(url);
+	//	RestAssured.responseSpecification.get();
+	
 	}
 
 	public void closeBrowserSession() {
