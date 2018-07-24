@@ -1,0 +1,33 @@
+
+tatocsetup
+
+=======================================================
+basic_course			xpath	//a[contains(@href,'tatoc/basic')]
+green_box				xpath	//*[@class="greenbox"]
+main_frame 				xpath	//*[@id="main"]
+child_frame 			xpath	//*[@id="child"]
+box_1					xpath	//*[@id="answer" and text()="Box 1"]
+box_2					xpath	//*[@id="answer" and text()="Box 2"]
+repaint_link			xpath 	//a[contains(text(), 'Repaint Box 2')]
+repaint_proceed			xpath	//a[contains(@onclick, 'gonext')]
+drag_box				xpath	//*[@id="dragbox" and @class="ui-draggable" and text()="DRAG ME"]
+drop_box				xpath	//*[@id="dropbox" and text()="DROPBOX"]
+drag_proceed			xpath	//a[contains(@onclick, 'gonext') and text()="Proceed"]
+launch_popup			xpath	//a[contains(@onclick, 'launchwindow') and text()="Launch Popup Window"]
+text_window				xpath	//*[@id="name"]
+submit_button			xpath	//*[@id="submit"]
+launch_proceed			xpath	//a[contains(@onclick, 'gonext') and text()="Proceed"]
+generate_token			xpath	//a[contains(@onclick, 'generateToken') and text()="Generate Token"]
+token_text				xpath	//*[@id="token"]
+advanced_course			xpath	//a[contains(@href,'tatoc/advanced')]
+menu2_select			xpath	//*[@class="menutitle" and text()="Menu 2"]
+gonext_click			xpath	//*[contains(@onclick, 'gonext') and text()="Go Next"]
+symbol_text				xpath	//*[@id="symboldisplay" and @name="symboldisplay"]
+name_value				xpath	//*[@id="name" and @type="text"]
+password_value			xpath	//*[@id="passkey" and @type="password"]
+proceed_button			xpath	//*[@id="submit" and @type="submit" and @value="Proceed"]
+finish_msg				xpath	//h1[@class="finish" and text()="End"]
+course_comp_msg			xpath	//span[@class="finish" and text()="Obstacle Course is Complete!"]
+video_page_text			xpath	//h1[text()="Ooyala Video Player"]
+error_msg				xpath	//h1[@class="error" and text()="Error"]
+
